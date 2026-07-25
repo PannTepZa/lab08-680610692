@@ -40,13 +40,6 @@ app.get("/api/me", (req: Request, res: Response) => {
   });
 });
 
-app.get("/api/enrollment", (req: Request, res: Response) => {
-  res.status(200).json({
-    ok: true,
-    fullname : "Pann Kitina",
-    studentId: "680610692"
-  });
-});
 
 app.use("/api/v2/students", studentRouter_v2);
 app.use("/api/v3/students", studentRouter_v3);
